@@ -1,3 +1,4 @@
+require"pry-byebug"
 # puts 2+30
 
 # p = 5000.0
@@ -133,3 +134,14 @@ def twenty_first_century (year)
 end
 
 puts twenty_first_century(2005)
+
+p "========== Ejercicio  =========="
+
+def isogram?(string)
+    p original_length = string.length
+    p string_array = string.downcase.split("")
+    binding.pry
+    p unique_length = string_array.uniq.length
+    p original_length == unique_length
+end
+p isogram?("Odin")
